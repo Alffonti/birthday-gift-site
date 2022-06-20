@@ -1,0 +1,92 @@
+body{
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: linear-gradient(#a2d2ff, #EFB0C9); 
+    color: #ffffff; 
+}
+
+/* I added a thin blurred border around the text to improve readibility. The contrast between the text and the backgorund is 1.59. I wanted to stick with the color palette but at the same time improve readibility. */
+h1, h2, h3, h4, p {
+    text-shadow: 0 0 1px black;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#brett-img{
+    width: 150px;
+    border-radius: 50%; /* To create a rounded image */
+    border: 6px solid #EFB0C9;
+    /* To remove margin between two elements, I need to aproach both of the adjacent elements (specify its margins. Some elements have a margin by default. */
+}
+
+#bday-age{
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* To remove margin between two elements, I need to aproach both of the adjacent elements (specify its margins. Some elements have a margin by default. */
+    margin: 20px 0 10px;
+}
+
+#bday-date{
+    background: #EFB0C9;
+    padding: 5px 10px;
+    /* To remove margin between two elements, I need to specify a margin for both elements.   */
+    margin: 0;
+}
+
+.gift-section{
+    margin-top: 50px;
+}
+
+.gift-title{
+    margin-bottom: 10px;
+}
+
+.gift-hint{
+    margin: 0;
+}
+
+.gift-img{
+    max-width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    margin: 20px auto;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+}
+
+/* The hover pseudo element override the backgorund image property when hovering over the image */
+#gift-img-happy:hover{
+    background-image: url("images/happy.gif");
+}
+
+#gift-img-hot:hover{
+    background-image: url("images/hot.gif");
+}
+
+#gift-img-genius:hover{
+    background-image: url("images/genius.gif");
+}
+
+#gift-img-cheers{
+    height: 200px;
+}
+
+#gift-img-cheers:hover{
+    background-image: url("images/cheers.gif");
+}
+
+#footer{
+    width: 400px;
+    margin: 40px auto 20px;
+    font-style: italics;
+}
+
+a{
+    color: white;
+}
